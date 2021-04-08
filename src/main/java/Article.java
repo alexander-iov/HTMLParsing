@@ -5,6 +5,13 @@ public class Article {
     private String url;
     private String about;
 
+    public Article(String name, double cost, String url, String about) {
+        this.name = name;
+        this.cost = cost;
+        this.url = url;
+        this.about = about;
+    }
+
     public String getName() {
         return name;
     }
@@ -35,5 +42,15 @@ public class Article {
 
     public void setAbout(String about) {
         this.about = about;
+    }
+
+    @Override
+    public String toString() {
+        return "Article{" +
+                "name='" + name + '\'' +
+                ", cost=" + cost +
+                ", url='" + url + '\'' +
+                ", about='" + about + '\'' +
+                '}';
     }
 }
